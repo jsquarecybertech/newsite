@@ -404,6 +404,37 @@
             box-sizing: border-box;
             width: 100%;
         }
+        
+        /* Responsive adjustments for circle diameters only */
+        /* Default (desktop/laptop): keep as is */
+        .circle-diameter {
+            width: 4rem;
+            height: 4rem;
+        }
+        @media (max-width: 1024px) {
+            .circle-diameter {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .circle-diameter {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .circle-diameter {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .circle-diameter {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
     </style>
 </head>
 <body class="matrix-bg">
